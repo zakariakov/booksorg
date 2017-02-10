@@ -1,0 +1,317 @@
+<!DOCTYPE QPH>
+<QPH language="fr_FR">
+<phrase>
+    <source>Add Book</source>
+    <target></target>
+</phrase>
+<phrase>
+    <source>Add bookmark</source>
+    <target>ajouter un marque-page</target>
+</phrase>
+<phrase>
+    <source>enter a name for this bookmark and select or edit group</source>
+    <target>Entrez un nom pour le signet et sélectionner un nom ou un groupe </target>
+</phrase>
+<phrase>
+    <source>Name:</source>
+    <target>Nom:</target>
+</phrase>
+<phrase>
+    <source>Group:</source>
+    <target>Groupe:</target>
+</phrase>
+<phrase>
+    <source>Scan Folder</source>
+    <target>Analyser dossier</target>
+</phrase>
+<phrase>
+    <source>This wizard will generate informations for pdf files need to specify the folder . </source>
+    <target>Cet assistant va générer des informations pour les fichiers pdf besoin de spécifier le dossier.</target>
+</phrase>
+<phrase>
+    <source>Folder :</source>
+    <target>Dossier:</target>
+</phrase>
+<phrase>
+    <source>Group :</source>
+    <target></target>
+</phrase>
+<phrase>
+    <source>Authors :</source>
+    <target>Auteur:</target>
+</phrase>
+<phrase>
+    <source>Authors From Pdf book</source>
+    <target>Auteurs du livre de Pdf</target>
+</phrase>
+<phrase>
+    <source>Generate Files</source>
+    <target>Générer des fichiers</target>
+</phrase>
+<phrase>
+    <source>Next</source>
+    <target>Suivant</target>
+</phrase>
+<phrase>
+    <source>Open Directory</source>
+    <target>ouverir répertoire</target>
+</phrase>
+<phrase>
+    <source>this folder no contains pdf files</source>
+    <target>ce dossier ne contient pas de fichiers pdf</target>
+</phrase>
+<phrase>
+    <source>Finished</source>
+    <target>fini</target>
+</phrase>
+<phrase>
+    <source>Click cancel button to close this wizard</source>
+    <target>Cliquez sur le bouton Annuler pour fermer cet assistant</target>
+</phrase>
+<phrase>
+    <source>Password:</source>
+    <target>mot de passe :</target>
+</phrase>
+<phrase>
+    <source>Path :</source>
+    <target>chemin:</target>
+</phrase>
+<phrase>
+    <source>Open file</source>
+    <target>Ouvrir fichier</target>
+</phrase>
+<phrase>
+    <source>This wizard will generate a file information for pdf file need to specify the pdf file name .</source>
+    <target>Cet assistant va générer une information de fichier pour le fichier pdf besoin de spécifier le nom du fichier pdf.</target>
+</phrase>
+<phrase>
+    <source>&amp;Return to page %1</source>
+    <target>&amp;Retour à la page %1</target>
+</phrase>
+<phrase>
+    <source>Edit...</source>
+    <target>Editer...</target>
+</phrase>
+<phrase>
+    <source>Rating :</source>
+    <target>Classement:</target>
+</phrase>
+<phrase>
+    <source>Author :</source>
+    <target>Auteur:</target>
+</phrase>
+<phrase>
+    <source>Title :</source>
+    <target>Titre:</target>
+</phrase>
+<phrase>
+    <source>Books Organizer</source>
+    <target>Livres Organisateur</target>
+</phrase>
+<phrase>
+    <source>Books</source>
+    <target>Livres</target>
+</phrase>
+<phrase>
+    <source>&amp;File</source>
+    <target>&amp;Fichier</target>
+</phrase>
+<phrase>
+    <source>&amp;Help</source>
+    <target>&amp;Aide</target>
+</phrase>
+<phrase>
+    <source>Open</source>
+    <target>Ouvrir</target>
+</phrase>
+<phrase>
+    <source>Open book with default programme</source>
+    <target>Ouvrir le livre avec le programme par défaut</target>
+</phrase>
+<phrase>
+    <source>Delete</source>
+    <target>Supprimez</target>
+</phrase>
+<phrase>
+    <source>Delete selected books or group</source>
+    <target>Supprimez les livres ou les groupes sélectionné</target>
+</phrase>
+<phrase>
+    <source>Change Author</source>
+    <target>Changer Auteur</target>
+</phrase>
+<phrase>
+    <source>Change Author for selected books</source>
+    <target>Changer Auteur de livres sélectionnés</target>
+</phrase>
+<phrase>
+    <source>Change Group</source>
+    <target>Modifier le groupe</target>
+</phrase>
+<phrase>
+    <source>Change Group for selected books</source>
+    <target>Changer Groupe de livres sélectionnés</target>
+</phrase>
+<phrase>
+    <source>Add Book</source>
+    <target></target>
+</phrase>
+<phrase>
+    <source>About</source>
+    <target>À propos</target>
+</phrase>
+<phrase>
+    <source>Icon view</source>
+    <target>Vue Icônes</target>
+</phrase>
+<phrase>
+    <source>Toggle icon view</source>
+    <target>Basculer vue Icône</target>
+</phrase>
+<phrase>
+    <source>Detail view</source>
+    <target>Vue détaillée</target>
+</phrase>
+<phrase>
+    <source>Toggle detailed list</source>
+    <target>Basculer liste détaillée</target>
+</phrase>
+<phrase>
+    <source>Groops</source>
+    <target>Groupes</target>
+</phrase>
+<phrase>
+    <source>Rating</source>
+    <target>Classement</target>
+</phrase>
+<phrase>
+    <source>&amp;Quit</source>
+    <target>&amp;Quitter</target>
+</phrase>
+<phrase>
+    <source>Switch Language...</source>
+    <target>changer la langue...</target>
+</phrase>
+<phrase>
+    <source>Create books information...</source>
+    <target>Créer des informations des livres...</target>
+</phrase>
+<phrase>
+    <source>Select %1:</source>
+    <target>Sélectionner %1:</target>
+</phrase>
+<phrase>
+    <source>Change informations...</source>
+    <target>Modifier informations...</target>
+</phrase>
+<phrase>
+    <source>Creator</source>
+    <target>Créateur</target>
+</phrase>
+<phrase>
+    <source>Modified</source>
+    <target>Modifié</target>
+</phrase>
+<phrase>
+    <source>&lt;p&gt;&lt;b&gt;booksorg %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;booksorg is a easy organizer for your PDF books using qpdfview and poppler library.&lt;p&gt; See &lt;a href=&quot;https://sourceforge.net/project/elokab/&quot;&gt;sourceforge.net/project/elokab&lt;/a&gt; for more information.&lt;/p&gt;&lt;p&gt;&amp;copy; About Zakaria&lt;/p&gt;</source>
+    <target>&lt;p&gt;&lt;b&gt;booksorg %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;booksorg est un organisateur facile pour vos livres PDF à l&apos;aide de poppler bibliothèque.&lt;p&gt; See &lt;a href=&quot;https://sourceforge.net/project/elokab/&quot;&gt;sourceforge.net/project/elokab&lt;/a&gt;pour plus d&apos;informations.&lt;/p&gt;&lt;p&gt;&amp;copy; About Zakaria&lt;/p&gt;</target>
+</phrase>
+<phrase>
+    <source>Comment</source>
+    <target>Commenter</target>
+</phrase>
+<phrase>
+    <source>Unknown</source>
+    <target>Inconnu</target>
+</phrase>
+<phrase>
+    <source>Search/</source>
+    <target>Recherche/</target>
+</phrase>
+<phrase>
+    <source>Do you want to delete All books in %1 ?.</source>
+    <target>Voulez-vous supprimer tous les livres en %1 ?.</target>
+</phrase>
+<phrase>
+    <source>Groups</source>
+    <target>Groupes</target>
+</phrase>
+<phrase>
+    <source>Search</source>
+    <target>Recherche</target>
+</phrase>
+<phrase>
+    <source>Go to page %1.</source>
+    <target>Aller à la page  %1.</target>
+</phrase>
+<phrase>
+    <source>Find:</source>
+    <target>Trouvez:</target>
+</phrase>
+<phrase>
+    <source>Match case</source>
+    <target>Respecter la casse</target>
+</phrase>
+<phrase>
+    <source>Find Next 
+</source>
+    <target>Trouvez Suivant</target>
+</phrase>
+<phrase>
+    <source>Find Previous 
+</source>
+    <target>Trouvez précédente</target>
+</phrase>
+<phrase>
+    <source>Thumbnails</source>
+    <target>Vignettes</target>
+</phrase>
+<phrase>
+    <source>Bookmarks</source>
+    <target>Signets</target>
+</phrase>
+<phrase>
+    <source>show/hide contents</source>
+    <target>afficher / masquer  contenu </target>
+</phrase>
+<phrase>
+    <source>&amp;First page</source>
+    <target>&amp;Première page</target>
+</phrase>
+<phrase>
+    <source>&amp;Previous page</source>
+    <target>&amp;Page précédente</target>
+</phrase>
+<phrase>
+    <source>&amp;Next page</source>
+    <target>&amp;Page Suivant</target>
+</phrase>
+<phrase>
+    <source>&amp;Last page</source>
+    <target>&amp;Dernière page</target>
+</phrase>
+<phrase>
+    <source>Zoom &amp;in</source>
+    <target>Agran&amp;dir</target>
+</phrase>
+<phrase>
+    <source>Original &amp;size</source>
+    <target>&amp;Taille originale</target>
+</phrase>
+<phrase>
+    <source>Fit width</source>
+    <target>Adapter la largeur</target>
+</phrase>
+<phrase>
+    <source>Fit to page size</source>
+    <target>Ajuster à la taille de la page</target>
+</phrase>
+<phrase>
+    <source>Invert colors</source>
+    <target>Inverser les couleurs</target>
+</phrase>
+<phrase>
+    <source>Two Pages</source>
+    <target>Deux Pages</target>
+</phrase>
+</QPH>

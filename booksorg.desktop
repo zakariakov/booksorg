@@ -1,0 +1,15 @@
+[Desktop Entry]
+
+Name=BooksOrg
+Name[ar]=منظم الكتب
+
+GenericName=Books Organizer
+GenericName[ar]=منظم الكتب الالكترونية
+
+Exec=booksorg %u
+Icon=booksorg
+Type=Application
+MimeType=application/pdf;
+Categories=Qt;Office;Viewer;
+
+
