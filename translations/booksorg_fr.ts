@@ -151,7 +151,7 @@
     </message>
     <message>
         <location filename="../actions.cpp" line="419"/>
-        <location filename="../actions.cpp" line="642"/>
+        <location filename="../actions.cpp" line="644"/>
         <source>Selection</source>
         <translation type="unfinished"></translation>
     </message>
@@ -177,12 +177,12 @@
         <translation type="unfinished">Deux Pages</translation>
     </message>
     <message>
-        <location filename="../actions.cpp" line="629"/>
+        <location filename="../actions.cpp" line="631"/>
         <source>of</source>
         <translation type="unfinished">de</translation>
     </message>
     <message>
-        <location filename="../actions.cpp" line="639"/>
+        <location filename="../actions.cpp" line="641"/>
         <source>Hand</source>
         <translation type="unfinished"></translation>
     </message>
@@ -372,140 +372,140 @@
 <context>
     <name>DocumentView</name>
     <message>
-        <location filename="../documentview.cpp" line="316"/>
-        <location filename="../documentview.cpp" line="355"/>
+        <location filename="../documentview.cpp" line="313"/>
+        <location filename="../documentview.cpp" line="352"/>
         <source>Unlock %1</source>
         <translation type="unfinished">ouvrir k %1</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="316"/>
-        <location filename="../documentview.cpp" line="355"/>
+        <location filename="../documentview.cpp" line="313"/>
+        <location filename="../documentview.cpp" line="352"/>
         <source>Password:</source>
         <translation type="unfinished">mot de passe :</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="727"/>
+        <location filename="../documentview.cpp" line="724"/>
         <source>this action open external links.
 %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="883"/>
+        <location filename="../documentview.cpp" line="880"/>
         <source>&amp;Return to page %1</source>
         <translation type="unfinished">&amp;Retour à la page %1</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="891"/>
+        <location filename="../documentview.cpp" line="888"/>
         <source>&amp;Next page</source>
         <translation type="unfinished">&amp;Page Suivant</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="894"/>
+        <location filename="../documentview.cpp" line="891"/>
         <source>&amp;Previous page</source>
         <translation type="unfinished">&amp;Page précédente</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="898"/>
+        <location filename="../documentview.cpp" line="895"/>
         <source>&amp;First page</source>
         <translation type="unfinished">&amp;Première page</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="901"/>
+        <location filename="../documentview.cpp" line="898"/>
         <source>&amp;Last page</source>
         <translation type="unfinished">&amp;Dernière page</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="905"/>
+        <location filename="../documentview.cpp" line="902"/>
         <source>&amp;Refresh</source>
         <translation type="unfinished">&amp;Rafraîchir</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1716"/>
+        <location filename="../documentview.cpp" line="1725"/>
         <source>Page </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1742"/>
-        <location filename="../documentview.cpp" line="1770"/>
+        <location filename="../documentview.cpp" line="1751"/>
+        <location filename="../documentview.cpp" line="1779"/>
         <source>Name</source>
         <translation type="unfinished">Nom</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1742"/>
+        <location filename="../documentview.cpp" line="1751"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1742"/>
+        <location filename="../documentview.cpp" line="1751"/>
         <source>Embedded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1742"/>
+        <location filename="../documentview.cpp" line="1751"/>
         <source>Subset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1742"/>
-        <location filename="../documentview.cpp" line="1775"/>
+        <location filename="../documentview.cpp" line="1751"/>
+        <location filename="../documentview.cpp" line="1784"/>
         <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1750"/>
-        <location filename="../documentview.cpp" line="1751"/>
+        <location filename="../documentview.cpp" line="1759"/>
+        <location filename="../documentview.cpp" line="1760"/>
         <source>Yes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1750"/>
-        <location filename="../documentview.cpp" line="1751"/>
+        <location filename="../documentview.cpp" line="1759"/>
+        <location filename="../documentview.cpp" line="1760"/>
         <source>No</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1770"/>
+        <location filename="../documentview.cpp" line="1779"/>
         <source>Value</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1789"/>
+        <location filename="../documentview.cpp" line="1798"/>
         <source>Created</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1790"/>
+        <location filename="../documentview.cpp" line="1799"/>
         <source>Title</source>
         <translation type="unfinished">Titre</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1791"/>
+        <location filename="../documentview.cpp" line="1800"/>
         <source>Author</source>
         <translation type="unfinished">Auteur</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1792"/>
+        <location filename="../documentview.cpp" line="1801"/>
         <source>Creator</source>
         <translation type="unfinished">Créateur</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1793"/>
+        <location filename="../documentview.cpp" line="1802"/>
         <source>Producer</source>
         <translation type="unfinished">Producteur</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1794"/>
+        <location filename="../documentview.cpp" line="1803"/>
         <source>Modified</source>
         <translation type="unfinished">Modifié</translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1795"/>
+        <location filename="../documentview.cpp" line="1804"/>
         <source>Format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../documentview.cpp" line="1772"/>
-        <location filename="../documentview.cpp" line="1796"/>
+        <location filename="../documentview.cpp" line="1781"/>
+        <location filename="../documentview.cpp" line="1805"/>
         <source>Pages</source>
         <translation type="unfinished">Pages</translation>
     </message>
@@ -575,14 +575,14 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="529"/>
+        <location filename="../mainwindow.cpp" line="538"/>
         <source>Books Organizer</source>
         <translation type="unfinished">Organisateur des Livres</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="44"/>
-        <location filename="../mainwindow.cpp" line="243"/>
-        <location filename="../mainwindow.cpp" line="1443"/>
+        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="1468"/>
         <source>Books</source>
         <translation>Livres</translation>
     </message>
@@ -596,8 +596,8 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Akaash&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -636,37 +636,37 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="244"/>
+        <location filename="../mainwindow.cpp" line="246"/>
         <source>Scan folder</source>
         <translation>Analyser dossier</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>&amp;Fullscreen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="267"/>
+        <location filename="../mainwindow.cpp" line="271"/>
         <source>scan folder for existing books</source>
         <translation>Analyser dossier </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="247"/>
         <source>Open</source>
         <translation type="unfinished">Ouvrir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="268"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Open... </source>
         <translation>Ouvrir...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>Open With...</source>
         <translation>Ouvrir avec...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="269"/>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>Open book with default programme</source>
         <translation type="unfinished">Ouvrir le livre avec le programme par défaut</translation>
     </message>
@@ -679,32 +679,32 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Supprimez les livres ou les groupes sélectionné</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>Change Author</source>
         <translation type="unfinished">Changer Auteur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="270"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Change Author for selected books</source>
         <translation type="unfinished">Changer Auteur de livres sélectionnés</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="250"/>
         <source>Change Group</source>
         <translation type="unfinished">Modifier le groupe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Change Group for selected books</source>
         <translation type="unfinished">Changer Groupe de livres sélectionnés</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>Add book</source>
         <translation>Ajouter un livre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="272"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>Add new book</source>
         <translation>Ajouter un livre</translation>
     </message>
@@ -718,12 +718,12 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Editer livre ou groupe sélectionné</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>About... </source>
         <translation>À propos...</translation>
     </message>
@@ -761,151 +761,167 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Classement</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="266"/>
+        <location filename="../mainwindow.cpp" line="270"/>
         <source>show books tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="256"/>
         <source>Standard Tool Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
+        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="277"/>
+        <source>Add current book</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="257"/>
         <source>&amp;Find</source>
         <translation type="unfinished">&amp;Trouvez</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="258"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="311"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>Recent files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="343"/>
+        <location filename="../mainwindow.cpp" line="351"/>
         <source>&amp;Quit</source>
         <translation>&amp;Quitter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="371"/>
         <source>Switch Language...</source>
         <translation>changer la langue...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>Default</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="377"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Arabic</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="383"/>
+        <location filename="../mainwindow.cpp" line="391"/>
         <source>English</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="389"/>
+        <location filename="../mainwindow.cpp" line="397"/>
         <source>Francais</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.cpp" line="559"/>
         <source>Create books information...</source>
         <translation type="unfinished">Créer des informations des livres...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="550"/>
-        <location filename="../mainwindow.cpp" line="765"/>
+        <location filename="../mainwindow.cpp" line="559"/>
+        <location filename="../mainwindow.cpp" line="785"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="753"/>
-        <location filename="../mainwindow.cpp" line="1011"/>
+        <location filename="../mainwindow.cpp" line="694"/>
+        <source>Unknown</source>
+        <translation type="unfinished">Inconnu</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="773"/>
+        <location filename="../mainwindow.cpp" line="1035"/>
         <source>Author</source>
         <translation>Auteur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="756"/>
+        <location filename="../mainwindow.cpp" line="776"/>
         <source>Group</source>
         <translation type="unfinished">Groupe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="761"/>
+        <location filename="../mainwindow.cpp" line="781"/>
         <source>Select %1:</source>
         <translation>Sélectionner %1:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="765"/>
+        <location filename="../mainwindow.cpp" line="785"/>
         <source>Change informations...</source>
         <translation type="unfinished">Modifier informations...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1009"/>
+        <location filename="../mainwindow.cpp" line="1033"/>
         <source>Created</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1010"/>
+        <location filename="../mainwindow.cpp" line="1034"/>
         <source>Title</source>
         <translation>Titre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1012"/>
+        <location filename="../mainwindow.cpp" line="1036"/>
         <source>Creator</source>
         <translation>Créateur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1013"/>
+        <location filename="../mainwindow.cpp" line="1037"/>
         <source>Producer</source>
         <translation>Producteur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1014"/>
+        <location filename="../mainwindow.cpp" line="1038"/>
         <source>Modified</source>
         <translation type="unfinished">Modifié</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1015"/>
+        <location filename="../mainwindow.cpp" line="1039"/>
         <source>Format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1016"/>
+        <location filename="../mainwindow.cpp" line="1040"/>
         <source>Pages</source>
         <translation type="unfinished">Pages</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1022"/>
+        <location filename="../mainwindow.cpp" line="1046"/>
         <source>Tag:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1149"/>
+        <location filename="../mainwindow.cpp" line="1174"/>
         <source>&amp;%1 %2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1224"/>
+        <location filename="../mainwindow.cpp" line="1249"/>
         <source>About booksorg</source>
         <translation>À propos de Booksorg</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1225"/>
+        <location filename="../mainwindow.cpp" line="1250"/>
         <source>&lt;p&gt;&lt;b&gt;booksorg %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;booksorg is a easy organizer for your PDF books using  poppler library.&lt;p&gt; See &lt;a href=&quot;https://elkirtasse.sourceforge.net/&quot;&gt;elkirtasse.sourceforge.net&lt;/a&gt; for more information.&lt;/p&gt;&lt;p&gt;&amp;copy; About Zakaria&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1234"/>
+        <location filename="../mainwindow.cpp" line="1259"/>
         <source>The change will take effect the next time the application is started.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="1543"/>
+        <source>The book no existes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -913,7 +929,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">&lt;p&gt;&lt;b&gt;booksorg %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;booksorg est un organisateur facile pour vos livres PDF à l&apos;aide de poppler bibliothèque.&lt;p&gt; See &lt;a href=&quot;https://sourceforge.net/project/elokab/&quot;&gt;sourceforge.net/project/elokab&lt;/a&gt;pour plus d&apos;informations.&lt;/p&gt;&lt;p&gt;&amp;copy; About Zakaria&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1246"/>
+        <location filename="../mainwindow.cpp" line="1271"/>
         <source>The language for this application has been changed.
 The change will take effect the next time the application is started.</source>
         <translation type="unfinished"></translation>
@@ -922,85 +938,92 @@ The change will take effect the next time the application is started.</source>
 <context>
     <name>MyModel</name>
     <message>
-        <location filename="../mymodel.cpp" line="111"/>
+        <location filename="../mymodel.cpp" line="143"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="112"/>
+        <location filename="../mymodel.cpp" line="144"/>
         <source>Author</source>
         <translation>Auteur</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="113"/>
+        <location filename="../mymodel.cpp" line="145"/>
         <source>Comment</source>
         <translation type="unfinished">Commenter</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="114"/>
+        <location filename="../mymodel.cpp" line="146"/>
         <source>Group</source>
         <translation type="unfinished">Groupe</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="115"/>
+        <location filename="../mymodel.cpp" line="147"/>
         <source>Rating</source>
         <translation>Classement</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="173"/>
-        <location filename="../mymodel.cpp" line="174"/>
-        <location filename="../mymodel.cpp" line="218"/>
-        <location filename="../mymodel.cpp" line="219"/>
-        <location filename="../mymodel.cpp" line="253"/>
-        <location filename="../mymodel.cpp" line="293"/>
-        <location filename="../mymodel.cpp" line="294"/>
-        <location filename="../mymodel.cpp" line="419"/>
-        <location filename="../mymodel.cpp" line="450"/>
-        <location filename="../mymodel.cpp" line="452"/>
-        <location filename="../mymodel.cpp" line="618"/>
-        <location filename="../mymodel.cpp" line="687"/>
-        <location filename="../mymodel.cpp" line="844"/>
+        <location filename="../mymodel.cpp" line="205"/>
+        <location filename="../mymodel.cpp" line="206"/>
+        <location filename="../mymodel.cpp" line="250"/>
+        <location filename="../mymodel.cpp" line="251"/>
+        <location filename="../mymodel.cpp" line="285"/>
+        <location filename="../mymodel.cpp" line="325"/>
+        <location filename="../mymodel.cpp" line="326"/>
+        <location filename="../mymodel.cpp" line="442"/>
+        <location filename="../mymodel.cpp" line="686"/>
+        <location filename="../mymodel.cpp" line="813"/>
+        <location filename="../mymodel.cpp" line="966"/>
         <source>Unknown</source>
         <translation>Inconnu</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="513"/>
-        <location filename="../mymodel.cpp" line="567"/>
+        <location filename="../mymodel.cpp" line="517"/>
+        <location filename="../mymodel.cpp" line="537"/>
         <source>Search/</source>
         <translation>Recherche/</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="752"/>
-        <source>Do you want to delete All books in %1 ?.</source>
-        <translation type="unfinished">Voulez-vous supprimer tous les livres en %1 ?.</translation>
+        <location filename="../mymodel.cpp" line="773"/>
+        <source>Do you want to delete All selected itemes?.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1009"/>
+        <location filename="../mymodel.cpp" line="774"/>
+        <source>Delete frome computer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you want to delete All books in %1 ?.</source>
+        <translation type="obsolete">Voulez-vous supprimer tous les livres en %1 ?.</translation>
+    </message>
+    <message>
+        <location filename="../mymodel.cpp" line="1131"/>
         <source>Groups</source>
         <translation type="unfinished">Groupes</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1010"/>
+        <location filename="../mymodel.cpp" line="1132"/>
         <source>Ratings</source>
         <translation type="unfinished">Classement</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1011"/>
+        <location filename="../mymodel.cpp" line="1133"/>
         <source>Authors</source>
         <translation type="unfinished">Auteur</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1012"/>
+        <location filename="../mymodel.cpp" line="1134"/>
         <source>Search</source>
         <translation>Recherche</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1063"/>
+        <location filename="../mymodel.cpp" line="1185"/>
         <source>Create books information...</source>
         <translation type="unfinished">Créer des informations des livres...</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1063"/>
+        <location filename="../mymodel.cpp" line="1185"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1094,7 +1117,7 @@ The change will take effect the next time the application is started.</source>
         <translation type="unfinished">Déverrouillez  %1</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="93"/>
+        <location filename="../main.cpp" line="94"/>
         <source>Books Organizer</source>
         <translation type="unfinished">Organisateur des Livres</translation>
     </message>
@@ -1309,12 +1332,12 @@ The change will take effect the next time the application is started.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../widgetpdf.cpp" line="142"/>
+        <location filename="../widgetpdf.cpp" line="144"/>
         <source>Warning</source>
         <translation type="unfinished">Attention</translation>
     </message>
     <message>
-        <location filename="../widgetpdf.cpp" line="143"/>
+        <location filename="../widgetpdf.cpp" line="145"/>
         <source>Couldn&apos;t open file  &apos;%1&apos;.</source>
         <translation type="unfinished">Impossible d&apos;ouvrir le fichier  &apos;%1&apos;.</translation>
     </message>

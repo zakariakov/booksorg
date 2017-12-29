@@ -72,8 +72,8 @@ private slots:
 private:
 
     QTreeWidget *treeWidgetBookmark;
-    QToolBar       *mToolBarBookmark;
-    QAction         *actAddBookmark;
+    QToolBar    *mToolBarBookmark;
+    QAction     *actAddBookmark;
 
 
 };

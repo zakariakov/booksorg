@@ -74,7 +74,7 @@ QSettings settings;
    Path::setCopyBooks(settings.value("CopyBooks",false).toBool());
 
 
-    ui->labelImageInfo->setPixmap(QPixmap(style()->standardPixmap(QStyle::SP_MessageBoxInformation)));
+    ui->labelImageInfo->setPixmap(EIcon::icon(INFO_HELP).pixmap(64,64)/*QPixmap(style()->standardPixmap(QStyle::SP_MessageBoxInformation))*/);
     setAcceptDrops(true);
      //mPath=new Path;
 
@@ -200,17 +200,45 @@ QSettings settings;
 
 MainWindow::~MainWindow()
 {
-    if(mDebug)
+   // if(mDebug)
     qDebug()<<"MainWindow::~MainWindow() saveGeometry";
+
+
+
+
+
+    delete ui;
+
+}
+
+void MainWindow::closeEvent(QCloseEvent *event)
+ {
+    for (int i = 0; i < ui->tabWidget->count(); ++i) {
+        WidgetPdf   *w= qobject_cast<WidgetPdf *>( ui->tabWidget->widget(i));
+        if(w){
+            QString path=w->filePath();
+            int p=  w->curPage();
+            qDebug()<<"MainWindow::closeEvent() savePage:"<<path << p;
+            mModel->savePage(path,p);
+
+        }
+    }
+//    if(widgetPdf()){
+//       QString path=widgetPdf()->filePath();
+//       int p=  widgetPdf()->curPage();
+//         qDebug()<<"MainWindow::~MainWindow() "<<path << p;
+//            mModel->savePage(path,p);
+//    }
 
     QSettings settings;
     settings.beginGroup("Main");
     settings.setValue("Geometry", saveGeometry());
     settings.endGroup();
 
-    delete ui;
 
-}
+     event->accept();
+
+ }
 
 void MainWindow::pathChanged(QString)
 {
@@ -249,6 +277,8 @@ void MainWindow::setupTools()
     mActMoveToAuthor=new QAction(tr("Change Author"),this);
     mActMoveToGroup=new QAction(tr("Change Group"),this);
     mActAddBook=new QAction(tr("Add book"),this);
+     mActAddCurrent=new QAction(tr("Add current book"),this);
+     mActAddCurrent->setEnabled(false);
     mActShowFullScreen = new QAction(tr("&Fullscreen"), this);
     mActAbout=new QAction(tr("About"),this);
     mActStandardMode=new QAction(tr("Standard Tool Bar"),this);
@@ -272,6 +302,7 @@ void MainWindow::setupTools()
     mActMoveToAuthor->setStatusTip(tr("Change Author for selected books"));
     mActMoveToGroup->setStatusTip(tr("Change Group for selected books"));
     mActAddBook->setStatusTip(tr("Add new book"));
+      mActAddCurrent->setStatusTip(tr("Add current book"));
     mActAbout->setStatusTip(tr("About... "));
     //mActFind->setStatusTip();
      // mActConfig->setStatusTip(tr("Add new book"));
@@ -284,7 +315,8 @@ void MainWindow::setupTools()
     mActMoveToAuthor->setIcon(EIcon::icon(AUTORS));
     mActMoveToGroup->setIcon(EIcon::icon(GROOPS));
     mActConfig->setIcon(EIcon::icon(CONFIGURE));
-    mActAddBook->setIcon(EIcon::icon(ADD));
+    mActAddBook->setIcon(EIcon::icon(OPEN));
+    mActAddCurrent->setIcon(EIcon::icon(ADD));
     mActShowFullScreen->setIcon(EIcon::icon(FULL_SCREEN));
     actBookmark->setIcon(EIcon::icon(BOOKMARK));
 
@@ -320,6 +352,7 @@ void MainWindow::setupTools()
     connect(mActRecents,SIGNAL(triggered()),recentFileActs[0],SLOT(trigger()));
     connect(mActBooksTab,SIGNAL(triggered()),this,SLOT(showTabBooks()));
     connect(mActAddBook,SIGNAL(triggered()),this,SLOT(addBook()));
+    connect(mActAddCurrent,SIGNAL(triggered()),this,SLOT(addCurrentBook()));
     connect(mActOpen,SIGNAL(triggered()),this,SLOT(slotOpen()));
     connect(mActOpenWith,SIGNAL(triggered()),this,SLOT(slotOpenWith()));
     connect(mActScanFolder,SIGNAL(triggered()),this,SLOT(scanFolder()));
@@ -334,6 +367,7 @@ void MainWindow::setupTools()
 
     //menu file
     ui->menuFile->addAction(mActAddBook);
+     ui->menuFile->addAction(mActAddCurrent);
     ui->menuFile->addAction(mActScanFolder);
     ui->menuFile->addAction(mActBooksTab);
     ui->menuFile->addSeparator();
@@ -497,6 +531,7 @@ void MainWindow::setCurentTab(int arg)
      */
     if(mDebug)qDebug()<<"MainWindow::setCurentTab(arg) :"<<arg;
 
+mActAddCurrent->setEnabled(false);
 
     bool visible=ui->tabWidget->currentWidget()!=ui->tabBooks;
 
@@ -521,7 +556,7 @@ void MainWindow::setCurentTab(int arg)
             mActions->setLayoutModeAct(wPdf->doctLayoutMode());
             mActions->setContinousModeAct(wPdf->isContinousMode());
             mActions->setInvertcolorsAct(wPdf->isInvertColors());
-
+mActAddCurrent->setEnabled(mModel->idFromFile(wPdf->filePath())==-1);
         }
     }
     ui->tabWidget->setTabsClosable(ui->tabWidget->count()-1);
@@ -658,6 +693,9 @@ void MainWindow::editBookInfo()
         return;
 //    qDebug()<<"editBookInfo2";
     QString path=widgetPdf()->filePath();
+
+
+
     QHash<QString,QString>hash=mModel->indexFromFileName(path );
 
 
@@ -667,18 +705,25 @@ void MainWindow::editBookInfo()
     qDebug()<<"hash id"<<id;
    // if(!hash ["icon"].isEmpty())
    QString iconName=Path::thumbnailsDir()+hash ["icon"];
-qDebug()<<"hash icon"<<iconName;
+
     if(!QFile::exists(iconName))
     {
         widgetPdf()->saveLogoPixmap(iconName);
     }
 
-    dlg->setTitle(hash ["title"]);
+    QString title=hash ["title"];
+    if(title.isEmpty())title=QFileInfo(path).baseName();
+
+    QString curpath=hash ["exec"];
+    if(curpath.isEmpty())curpath=path;
+
+
+    dlg->setTitle(title);
     dlg->setIcon(QIcon(Path::thumbnailsDir()+hash ["icon"]));
     dlg->setComment( hash ["comment"]);
     dlg->setAuthor(mModel->authorList(),hash ["author"]);
     dlg->setRating( hash ["favo"].toInt());
-    dlg->setPath(hash ["exec"]);
+    dlg->setPath(curpath);
 
     QString name= hash ["group"];
     dlg->setGroup(mModel->groupList(), name!=QString()? name :tr("Unknown"));
@@ -690,12 +735,14 @@ qDebug()<<"hash icon"<<iconName;
 
     if(dlg->exec()==QDialog::Accepted)
     {
-        if(id!=-1){
-            mModel->updateBook(id,dlg->title(),dlg->author()
-                               ,dlg->group(),dlg->comment()
-                               ,dlg->path(),dlg->rating(),dlg->tags());
+        if(chekForaddBook() && id!=-1){
 
-            ui->tabWidget->setTabText(ui->tabWidget->currentIndex(),dlg->title());
+                mModel->updateBook(id,dlg->title(),dlg->author()
+                                   ,dlg->group(),dlg->comment()
+                                   ,dlg->path(),dlg->rating(),dlg->tags());
+
+                ui->tabWidget->setTabText(ui->tabWidget->currentIndex(),dlg->title());
+
         }
     }
 
@@ -905,11 +952,11 @@ void MainWindow::slotOpenFileName(const QString &fileName)
     }
 
     //check if book is added to model
-    if(mModel->idFromFile(fileName)==-1)
-    {
-        if(addBook(fileName))
-            return;
-    }
+//    if(mModel->idFromFile(fileName)==-1)
+//    {
+//        if(addBook(fileName))
+//            return;
+//    }
 
     //open this book
     WidgetPdf    *widgetPdf=new WidgetPdf;
@@ -918,7 +965,7 @@ void MainWindow::slotOpenFileName(const QString &fileName)
     if(widgetPdf->openDoc(mFileName,page))
     {
         qDebug()<<"MainWindow::slotOpenFileName() :" << mFileName ;
-        ui->tabWidget->addTab(widgetPdf,QIcon(":/icons/application-pdf.png"),  bookTitle(mFileName/*,widgetPdf*/));
+        ui->tabWidget->addTab(widgetPdf,EIcon::icon(APP_PDF)/*QIcon(":/icons/application-pdf.png")*/,  bookTitle(mFileName/*,widgetPdf*/));
 
         ui->tabWidget->setCurrentWidget(widgetPdf);
         connect(widgetPdf,SIGNAL(pageChanged(QString,int)),mModel,SLOT(savePage(QString,int)));
@@ -1088,6 +1135,7 @@ void MainWindow::customContextMenu(QPoint)
 
     menu.addSeparator();
     menu.addAction(mActAddBook);
+    menu.addAction(mActAddCurrent);
     menu.exec(QCursor::pos());
 
 }
@@ -1509,4 +1557,50 @@ void MainWindow::updateItem(QModelIndex index)
         ui->listView->update(index);
     else  if(focusWidget()==ui->treeView)
         ui->treeView->update(index);
+}
+
+// adding book if no exist
+bool MainWindow::chekForaddBook()
+{
+    if(!widgetPdf())
+        return false;
+//    qDebug()<<"editBookInfo2";
+    QString path=widgetPdf()->filePath();
+
+    //check if book is added to model
+    if(mModel->idFromFile(path)>-1)
+    {
+
+            return true;
+    }
+
+
+    QMessageBox msgBox;
+    msgBox.setText(tr("The book no existes."));
+    msgBox.setInformativeText("Do you want to add the book?");
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No) ;
+    msgBox.setDefaultButton(QMessageBox::Save);
+    int ret = msgBox.exec();
+
+    if(ret==QMessageBox::Yes )
+    {
+        if (addBook(path))
+         return true;
+    }
+
+    return false;
+
+}
+
+void MainWindow::addCurrentBook()
+{
+    if(!widgetPdf())
+        return ;
+    QString path=widgetPdf()->filePath();
+
+    //check if book is added to model
+    if(mModel->idFromFile(path)>-1)
+               return ;
+
+    addBook(path);
 }

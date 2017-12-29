@@ -479,6 +479,8 @@ mActSizeFite->setActionGroup(mAlignActionsFite);
     sepPdf4=new QAction(this);
    sepPdf4->setSeparator(true);
 
+
+
   //  mListViewPdf.append(mActShowHide);
 //    mListViewPdf.append(sepPdf);
 //    mListViewPdf.append(mActZoomIn);
@@ -525,7 +527,7 @@ QList<QAction *>Actions::listViewPdf()
      return  QList<QAction *>()
              <<mActFirst<<(mActPrev) <<(mActNext)
             <<(mActLast)<<(sepPdf4) <<(mActRefresh)
-           <<(mActEditBookInfo)<<(mActAddBookmark) ;
+           <<(mActEditBookInfo)<<(mActAddBookmark);
 
 
  }

@@ -175,6 +175,7 @@ private:
     QAction *mActSinglePage;
     QAction *mActTwoPages;
 
+
    // QList<QAction*>mListEditPdf;
    // QList<QAction*>mListViewPdf;
     //QList<QAction*>mListToolBarPdf;

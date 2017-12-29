@@ -34,17 +34,17 @@ win32{
 #    QT +=winextras
 }else{
 
-        equals(QT_MAJOR_VERSION, 5) {
-          INCLUDEPATH  += /usr/include/poppler/qt5
-          LIBS         += -L/usr/lib -lpoppler-qt5
-                     message("qt vertion is :5 " $$QT_MAJOR_VERSION)
-        }
+    equals(QT_MAJOR_VERSION, 5) {
+    INCLUDEPATH  += /usr/include/poppler/qt5
+    LIBS         += -L/usr/lib -lpoppler-qt5
+    message("qt vertion is :5 " $$QT_MAJOR_VERSION)
+    }
 
-        equals(QT_MAJOR_VERSION, 4) {
-           INCLUDEPATH  += /usr/include/poppler/qt4
-           LIBS         += -L/usr/lib -lpoppler-qt4
-           message("qt vertion is :4 " $$QT_MAJOR_VERSION)
-        }
+    equals(QT_MAJOR_VERSION, 4) {
+    INCLUDEPATH  += /usr/include/poppler/qt4
+    LIBS         += -L/usr/lib -lpoppler-qt4
+    message("qt vertion is :4 " $$QT_MAJOR_VERSION)
+    }
 
 }
 
@@ -110,13 +110,21 @@ CODECFORTR = UTF-8
 
 # INSTALL-----------------------------------------------------------
 
- target.path = /usr/bin
+target.path = /usr/bin
 
- applicationsData.files=booksorg.desktop
- applicationsData.path=/usr/share/applications/
+applicationsData.files=booksorg.desktop
+applicationsData.path=/usr/share/applications/
 
- icon.files=icons/booksorg.svg
- icon.path=/usr/share/icons/hicolor/scalable/apps
- INSTALLS += target \
-            applicationsData\
-            icon
+icon.files=icons/booksorg.svg
+icon.path=/usr/share/icons/hicolor/scalable/apps
+
+font.files=fonts/fontawesome.ttf
+font.path=/usr/share/booksorg/fonts/
+
+INSTALLS += target \
+             applicationsData\
+             icon\
+             font
+
+DISTFILES += \
+             fonts/fontawesome.ttf

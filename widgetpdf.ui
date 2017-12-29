@@ -75,8 +75,7 @@
        </property>
        <widget class="QWidget" name="tab">
         <attribute name="icon">
-         <iconset resource="images.qrc">
-          <normaloff>:/icons/view-list-details.png</normaloff>:/icons/view-list-details.png</iconset>
+         <iconset theme="view-list"/>
         </attribute>
         <attribute name="title">
          <string>Contents</string>
@@ -84,8 +83,7 @@
        </widget>
        <widget class="QWidget" name="tab_2">
         <attribute name="icon">
-         <iconset resource="images.qrc">
-          <normaloff>:/icons/view-list-icons.png</normaloff>:/icons/view-list-icons.png</iconset>
+         <iconset theme="view-list-icons"/>
         </attribute>
         <attribute name="title">
          <string>Thumbnails</string>
@@ -251,8 +249,6 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="images.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -84,10 +84,15 @@ int main(int argc, char *argv[])
     translator.load(":/translations/booksorg_"+locale);
     a.installTranslator(&translator);
 
-    if(locale=="ar")
-        a.setLayoutDirection(Qt::RightToLeft);
+    QFontDatabase::addApplicationFont(":/fonts/fontawesome.ttf");
+
+//    if(locale=="ar")
+//        a.setLayoutDirection(Qt::RightToLeft);
+
 
 #if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
+    QLocale lx=QLocale(locale);
+    a.setLayoutDirection(lx.textDirection());
     a.setApplicationDisplayName(QObject::tr("Books Organizer"));
 #endif
 

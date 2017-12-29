@@ -44,7 +44,7 @@ public:
 
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+void closeEvent(QCloseEvent *event);
 signals:
 
     void   curPageChanged(int);
@@ -288,6 +288,8 @@ void updateItem(QModelIndex index);
 void fontModel(EditBookDialog *w);
 void slotShowFullScreen(bool show);
 
+bool chekForaddBook();
+void addCurrentBook();
 private:
 
     void dragEnterEvent(QDragEnterEvent *e);
@@ -336,6 +338,7 @@ private:
     QAction *mActMoveToGroup;
     QAction *mActMoveToAuthor;
     QAction *mActAddBook;
+     QAction *mActAddCurrent;
     QAction *mActAbout;
     QAction *mActFind;
     QAction *mActStandardMode;

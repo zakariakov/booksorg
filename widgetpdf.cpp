@@ -22,7 +22,7 @@
 #include "widgetpdf.h"
 #include "ui_widgetpdf.h"
 #include "itemdelegate.h"
-#include "eicon.h"
+
 
 #include <QSettings>
 #include <QMessageBox>

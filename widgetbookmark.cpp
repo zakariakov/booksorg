@@ -31,7 +31,7 @@ WidgetBookmark::WidgetBookmark(QWidget *parent) :
 
     QAction *actRemoveBookmark=new QAction(EIcon::icon(REMOVE),tr("Remove Bookmark"),this) ;
     connect(actRemoveBookmark,SIGNAL(triggered()),this,SLOT(removeBookmark()));
-    QAction *actRenameBookmark=new QAction(EIcon::icon(EDIT),tr("Rename Bookmark"),this) ;
+    QAction *actRenameBookmark=new QAction(EIcon::icon(RENAME),tr("Rename Bookmark"),this) ;
     connect(actRenameBookmark,SIGNAL(triggered()),this,SLOT(renameBookmark()));
 
     mToolBarBookmark->addAction(actAddBookmark);
