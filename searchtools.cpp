@@ -24,7 +24,7 @@
 #include "eicon.h"
 #include <QtGui>
 #include <QSettings>
-
+#include <QAction>
 SearchTools::SearchTools(bool isPdf, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::SearchTools)
@@ -138,4 +138,4 @@ Qt::LayoutDirection SearchTools::inputDirection() const
   qDebug()<<"SearchTools::inputDirection() layoutDirection:"<<ui->lineEditFind->layoutDirection();
 
    return ui->lineEditFind->layoutDirection();
-  }
+}

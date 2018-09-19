@@ -71,9 +71,9 @@ protected:
     int columnCount(const QModelIndex &) const{return 5;}
 
 signals:
-
+    void showMessage(QString);
     void pathChanged(QString);
-void updateItem(QModelIndex);
+    void updateItem(QModelIndex);
 public slots:
 
     //! \brief addBook اضافة كتاب الى قاعدة البيانات
@@ -275,6 +275,7 @@ public slots:
     //!
     void updateDataBase();
 
+    void cleanBooksDir();
 private:
 
     enum Columns{

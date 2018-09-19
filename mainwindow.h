@@ -343,7 +343,7 @@ private:
     QAction *mActFind;
     QAction *mActStandardMode;
     QAction *mActShowFullScreen;
-
+ QAction *mActcleanBooks;
 
     /// عدد الملفات السابقة
     enum { MaxRecentFiles = 7 };

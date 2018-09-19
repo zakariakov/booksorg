@@ -134,7 +134,7 @@ void ItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, 
 
     int y1;
     painter->setPen(textcol);
-
+//qDebug()<<fm1.width(firstRow)<<rWidth-decorationMargin;
     if(fm1.width(firstRow)>=rWidth-decorationMargin){
 
         firstRow=fm1.elidedText(firstRow,Qt::ElideRight,rWidth-decorationMargin);
@@ -166,13 +166,13 @@ QImage ItemDelegate::imageThumbnail(const QModelIndex index)const
         return image;
     }
 
- int i=index.data(Qt::UserRole).toInt();
+    int i=index.data(Qt::UserRole).toInt();
 
     Poppler::Page* page= mDocumentView->pageDoc(i);
 
     Thumbnail *tb=new Thumbnail(page,index);
     mThumbnails->insert(index,tb);
-   // connect(tb,SIGNAL(imageFiniched(QModelIndex)),this,SLOT(updateImage(QModelIndex)));
+    // connect(tb,SIGNAL(imageFiniched(QModelIndex)),this,SLOT(updateImage(QModelIndex)));
     connect(tb,SIGNAL(imageFiniched(QModelIndex)),this,SIGNAL(sizeHintChanged(QModelIndex)));
 
     return tb->image();

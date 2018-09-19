@@ -32,7 +32,7 @@
 #include <QVBoxLayout>
 #include <QDialogButtonBox>
 #include <QLabel>
-
+#include <QDirIterator>
 #include <QBuffer>
 #include <QImageWriter>
 //_____________________________________________________
@@ -50,7 +50,6 @@ sort(0);
 void MyModel::openDataBase()
 {
     db.setDatabaseName(Path::workingDir()+"/books.db");
-
 
     QString txt="no database: ";
     if(!db.open())
@@ -1254,4 +1253,69 @@ QString MyModel::checkFilePath(const QString &file)
         return fi.fileName();
 
     return file;
+}
+
+void MyModel::cleanBooksDir()
+{
+
+    QStringList listThumb;
+    QStringList listbooks;
+    QString booksDir=Path::booksDir();
+    QString thumbDir=Path::thumbnailsDir();
+
+    QString   txt="select icon, exec from books";
+    QSqlQuery query;
+    query.exec(txt);
+    while(query.next())
+    {
+        listThumb.append( query.value(0).toString());
+        listbooks.append( query.value(1).toString());
+    }
+
+    //Clean databae
+    foreach (QString file, listbooks) {
+        if(QFile::exists(file))
+            continue;
+
+        if(!QFile::exists(booksDir+"/"+file)){
+            qDebug() << "no exist"<<booksDir+file;
+            QString text=QString("DELETE FROM books WHERE exec='%1'")
+                    .arg(file);
+
+            emit showMessage(tr("removing... ")+file+tr(" from data.."));
+            query.exec(text);
+            qApp->processEvents();
+        }
+
+    }
+
+    //Clean thumbnail
+    QDirIterator it(thumbDir, QStringList() << "*.png");
+    while (it.hasNext()) {
+        QFileInfo f(it.next());
+        if(!listThumb.contains(f.fileName())){
+
+            qDebug() << f.fileName()<<f.absoluteFilePath();
+            emit showMessage(tr("removing...")+f.fileName());
+            QFile::remove(f.absoluteFilePath());
+            qApp->processEvents();
+        }
+    }
+
+    //Clean books
+    QDirIterator itB(booksDir, QStringList() << "*.pdf");
+    while (itB.hasNext()) {
+        QFileInfo f(itB.next());
+        if(!listbooks.contains(f.fileName())){
+            qDebug() << f.fileName()<<f.absoluteFilePath();
+            emit showMessage(tr("removing...")+f.fileName());
+            QFile::remove(f.absoluteFilePath());
+            qApp->processEvents();
+        }
+    }
+
+
+
+    emit showMessage("");
+
 }

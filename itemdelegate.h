@@ -51,7 +51,7 @@ private:
 
     QPixmap decoration(const QModelIndex &index) const;
 
-     QImage imageThumbnail(const QModelIndex index)const;
+    QImage imageThumbnail(const QModelIndex index)const;
 
     QPalette::ColorRole foregroundRole(const QStyleOptionViewItem &option, const QModelIndex &index) const;
 

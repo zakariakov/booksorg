@@ -144,6 +144,7 @@ QSettings settings;
     connect( ui->treeView->selectionModel(),SIGNAL(currentRowChanged(QModelIndex,QModelIndex))
              ,this,SLOT(slotcurrentRowChanged(QModelIndex,QModelIndex)));
 
+    connect(mModel,SIGNAL(showMessage(QString)),ui->statusBar,SLOT(showMessage(QString)));
     connect(mModel,SIGNAL(pathChanged(QString)),ui->statusBar,SLOT(showMessage(QString)));
     connect(mModel,SIGNAL(pathChanged(QString)),this,SLOT(pathChanged(QString)));
     connect(mModel,SIGNAL(updateItem(QModelIndex)),this,SLOT(updateItem(QModelIndex)));
@@ -285,7 +286,7 @@ void MainWindow::setupTools()
     mActFind= new QAction(EIcon::icon(FIND),tr("&Find"),this);
     mActConfig=new QAction(tr("Options"),this);
     QAction *actBookmark=ui->dockWidgetBookmark->toggleViewAction();
-
+mActcleanBooks= new QAction(EIcon::icon(FIND),tr("&Clean"),this);
     //Shortcuts
     mActBooksTab->setShortcut(QKeySequence(QKeySequence::AddTab));
     mActScanFolder->setShortcut(QKeySequence("Ctrl+W"));
@@ -364,6 +365,7 @@ void MainWindow::setupTools()
     connect(mActShowFullScreen, SIGNAL(triggered(bool)),this, SLOT(slotShowFullScreen(bool)));
     connect(mActStandardMode,SIGNAL(triggered(bool)),this,SLOT(switchToolBarMode(bool)));
     connect(mActFind,SIGNAL(triggered()),this,SLOT(showHideSearch()));
+    connect(mActcleanBooks,SIGNAL(triggered()),mModel,SLOT(cleanBooksDir()));
 
     //menu file
     ui->menuFile->addAction(mActAddBook);
@@ -385,6 +387,7 @@ void MainWindow::setupTools()
     ui->menuEdit->addSeparator();
     ui->menuEdit->addActions( mActions->listEditPdf());
     ui->menuEdit->addSeparator();
+     ui->menuEdit->addAction(mActcleanBooks);
 
     //menu view
 

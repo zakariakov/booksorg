@@ -1,7 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>icons/0.png</file>
-        <file>icons/1.png</file>
         <file>icons/2.png</file>
         <file>icons/3.png</file>
         <file>icons/4.png</file>
@@ -21,5 +19,7 @@
         <file>icons/cross.png</file>
         <file>icons/tabbooks.png</file>
         <file>fonts/fontawesome.ttf</file>
+        <file>icons/0.png</file>
+        <file>icons/1.png</file>
     </qresource>
 </RCC>

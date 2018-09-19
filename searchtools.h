@@ -33,12 +33,14 @@ namespace Ui {
 class SearchTools;
 }
 
+
+
 class SearchTools : public QWidget
 {
     Q_OBJECT
     
 public:
-    explicit SearchTools(bool isPdf=true,QWidget *parent = 0);
+    explicit SearchTools(bool isPdf=true,QWidget *parent = nullptr);
     ~SearchTools();
     void show();
 signals:
