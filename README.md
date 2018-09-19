@@ -9,6 +9,8 @@ Organize with ease your book pdf
 
 ![Screenshots](https://github.com/zakariakov/screenshots/blob/master/booksorg-1.png)
 
+Depends :Qt5-svg , poppler-qt5
+
 # Install
 
 git clone https://github.com/zakariakov/booksorg.git
