@@ -110,6 +110,8 @@ CODECFORTR = UTF-8
 
 # INSTALL-----------------------------------------------------------
 
+ MKDIR = mkdir -p /usr/share/icons/hicolor/scalable/apps
+
 target.path = /usr/bin
 
 applicationsData.files=booksorg.desktop
@@ -118,13 +120,10 @@ applicationsData.path=/usr/share/applications/
 icon.files=icons/booksorg.svg
 icon.path=/usr/share/icons/hicolor/scalable/apps
 
-font.files=fonts/fontawesome.ttf
-font.path=/usr/share/booksorg/fonts/
 
 INSTALLS += target \
              applicationsData\
-             icon\
-             font
+             icon
 
 DISTFILES += \
              fonts/fontawesome.ttf
