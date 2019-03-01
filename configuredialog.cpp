@@ -15,6 +15,9 @@ ConfigureDialog::ConfigureDialog(QWidget *parent) :
                                              QDir::homePath()+"/."+QApplication::applicationName()).toString());
     ui->checkBoxCopy->setChecked(settings.value("CopyBooks",false).toBool());
 
+    ui->lineEditExPrg->setText(settings.value("ExternalProgram").toString());
+
+
 }
 
 ConfigureDialog::~ConfigureDialog()
@@ -34,6 +37,7 @@ void ConfigureDialog::on_buttonBox_clicked(QAbstractButton *button)
          QSettings settings;
          settings.setValue("BooksPath",ui->lineEditPath->text());
          settings.setValue("CopyBooks",ui->checkBoxCopy->isChecked());
+         settings.setValue("ExternalProgram",ui->lineEditExPrg->text());
          this->accept();
         }else{
             QMessageBox::information(this,"",tr("this directory %1 .\n is read only").arg(ui->lineEditPath->text()));

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ar_EG">
+<TS version="2.1" language="ar_EG">
 <context>
     <name>Actions</name>
     <message>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../actions.cpp" line="433"/>
         <source>Invert colors... </source>
-        <translation type="unfinished">عكس الألوان...</translation>
+        <translation type="unfinished">عكس الألوان... </translation>
     </message>
     <message>
         <location filename="../actions.cpp" line="448"/>
@@ -371,19 +371,23 @@
         <translation type="unfinished">تحديد مجلد</translation>
     </message>
     <message>
-        <location filename="../configuredialog.ui" line="48"/>
-        <source>copy the book when you add it</source>
-        <translation type="unfinished">نسخ الكتاب عند اظافته </translation>
+        <location filename="../configuredialog.ui" line="50"/>
+        <source>External program :</source>
+        <translation type="unfinished">برنامج خارجي :</translation>
     </message>
     <message>
-        <location filename="../configuredialog.cpp" line="39"/>
+        <location filename="../configuredialog.ui" line="62"/>
+        <source>copy the book when you add it</source>
+        <translation type="unfinished">نسخ الكتاب عند اظافته</translation>
+    </message>
+    <message>
+        <location filename="../configuredialog.cpp" line="43"/>
         <source>this directory %1 .
  is read only</source>
-        <translation type="unfinished">هذا المجلد %1 
-للقراءة فقط </translation>
+        <translation type="unfinished">هذا المجلد %1 . للقراءة فقط</translation>
     </message>
     <message>
-        <location filename="../configuredialog.cpp" line="48"/>
+        <location filename="../configuredialog.cpp" line="52"/>
         <source>Open Directory</source>
         <translation type="unfinished">فتح مجلد</translation>
     </message>
@@ -508,7 +512,7 @@
     <message>
         <location filename="../documentview.cpp" line="1800"/>
         <source>Author</source>
-        <translation type="unfinished">المؤلف </translation>
+        <translation type="unfinished">المؤلف</translation>
     </message>
     <message>
         <location filename="../documentview.cpp" line="1801"/>
@@ -534,11 +538,11 @@
         <location filename="../documentview.cpp" line="1781"/>
         <location filename="../documentview.cpp" line="1805"/>
         <source>Pages</source>
-        <translation type="unfinished">الصفحات </translation>
+        <translation type="unfinished">الصفحات</translation>
     </message>
     <message>
         <source>Num Pages :</source>
-        <translation>عدد الصفحات :</translation>
+        <translation type="vanished">عدد الصفحات :</translation>
     </message>
 </context>
 <context>
@@ -602,14 +606,14 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="538"/>
+        <location filename="../mainwindow.cpp" line="569"/>
         <source>Books Organizer</source>
         <translation>منظم الكتب</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="44"/>
-        <location filename="../mainwindow.cpp" line="245"/>
-        <location filename="../mainwindow.cpp" line="1468"/>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="1513"/>
         <source>Books</source>
         <translation>الكتب</translation>
     </message>
@@ -623,8 +627,8 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Microsoft Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans Serif&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -663,131 +667,131 @@ p, li { white-space: pre-wrap; }
         <translation>القائمة الرئيسية</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Scan folder</source>
         <translation>مسح مجلد</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>Add current book</source>
         <translation>اضافة الكتاب الحالي</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="283"/>
         <source>&amp;Fullscreen</source>
         <translation>&amp;ملء الشاشة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>scan folder for existing books</source>
         <translation>مسح مجلد بحثا عن كتب</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>Open</source>
         <translation>فتح</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="272"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Open... </source>
         <translation>فتح...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Open With...</source>
         <translation>فتح باستخدام...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="302"/>
         <source>Open book with default programme</source>
         <translation>فتح الكتاب بالتطبيق الافتراضي</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>حذف</translation>
+        <translation type="vanished">حذف</translation>
     </message>
     <message>
         <source>Delete selected books or group</source>
-        <translation>حذف الكتب او المجموعات المحددة</translation>
+        <translation type="vanished">حذف الكتب او المجموعات المحددة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>Change Author</source>
         <translation>تغيير المؤلف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="303"/>
         <source>Change Author for selected books</source>
         <translatorcomment>تغيير المؤلف للملفات المحددة</translatorcomment>
         <translation>تغيير المؤلف للملفات المحددة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Change Group</source>
         <translatorcomment>تغيير المجموعة</translatorcomment>
         <translation>تغيير المجموعة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Change Group for selected books</source>
         <translation>تغيير المجموعة للملفات المحددة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>Add book</source>
         <translation>إضافة كتاب</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>Add new book</source>
         <translation>اضافة كتاب جديد</translation>
     </message>
     <message>
         <source>Edit...</source>
-        <translation>تحرير...</translation>
+        <translation type="vanished">تحرير...</translation>
     </message>
     <message>
         <source>Edit select book or group</source>
-        <translation>تحرير المجموعة او اكتاب المحدد</translation>
+        <translation type="vanished">تحرير المجموعة او اكتاب المحدد</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation>المنزل</translation>
+        <translation type="vanished">المنزل</translation>
     </message>
     <message>
         <source>Go home</source>
-        <translation>المنزل</translation>
+        <translation type="vanished">المنزل</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="284"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>About... </source>
         <translation>حول...</translation>
     </message>
     <message>
         <source>Icon view</source>
-        <translation>عرض ايقونات</translation>
+        <translation type="vanished">عرض ايقونات</translation>
     </message>
     <message>
         <source>Toggle icon view</source>
-        <translation>التبديل الى عرض الايقونات</translation>
+        <translation type="vanished">التبديل الى عرض الايقونات</translation>
     </message>
     <message>
         <source>Detail view</source>
-        <translation>عرض تفصيلي</translation>
+        <translation type="vanished">عرض تفصيلي</translation>
     </message>
     <message>
         <source>Toggle detailed list</source>
-        <translation>التبديل الى عرض التفاصيل</translation>
+        <translation type="vanished">التبديل الى عرض التفاصيل</translation>
     </message>
     <message>
         <source>Groops</source>
-        <translation>المجموعات</translation>
+        <translation type="vanished">المجموعات</translation>
     </message>
     <message>
         <source>Authors</source>
@@ -795,14 +799,14 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Autors</source>
-        <translation>المؤلفين</translation>
+        <translation type="vanished">المؤلفين</translation>
     </message>
     <message>
         <source>Rating</source>
-        <translation>التنقيط</translation>
+        <translation type="vanished">التنقيط</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="270"/>
+        <location filename="../mainwindow.cpp" line="299"/>
         <source>show books tab</source>
         <translation>اظهار لسان الكتب</translation>
     </message>
@@ -811,164 +815,169 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">تحرير</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="256"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>Standard Tool Bar</source>
         <translation type="unfinished">ادوات تقليدية</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Find</source>
         <translation>&amp;بحث</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="258"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>Options</source>
         <translation>خيارات</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="311"/>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="289"/>
+        <source>&amp;Clean</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>Recent files</source>
         <translation>الملفات السابقة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="381"/>
         <source>&amp;Quit</source>
         <translation>&amp;خروج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>Switch Language...</source>
         <translation>تبديل لغة التطبيق...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>Default</source>
         <translation>الافتراضي</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Arabic</source>
         <translation>عربي</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="391"/>
+        <location filename="../mainwindow.cpp" line="422"/>
         <source>English</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>Francais</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="559"/>
+        <location filename="../mainwindow.cpp" line="590"/>
         <source>Create books information...</source>
         <translation>انشاء معلومات الكتب...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="559"/>
-        <location filename="../mainwindow.cpp" line="785"/>
+        <location filename="../mainwindow.cpp" line="590"/>
+        <location filename="../mainwindow.cpp" line="823"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="694"/>
+        <location filename="../mainwindow.cpp" line="732"/>
         <source>Unknown</source>
         <translation>غير معروف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="773"/>
-        <location filename="../mainwindow.cpp" line="1035"/>
+        <location filename="../mainwindow.cpp" line="811"/>
+        <location filename="../mainwindow.cpp" line="1080"/>
         <source>Author</source>
         <translation>المؤلف </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="776"/>
+        <location filename="../mainwindow.cpp" line="814"/>
         <source>Group</source>
         <translation>المجموعة</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="781"/>
+        <location filename="../mainwindow.cpp" line="819"/>
         <source>Select %1:</source>
         <translation>حدد %1:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="785"/>
+        <location filename="../mainwindow.cpp" line="823"/>
         <source>Change informations...</source>
         <translation>تغيير المعلومات...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1033"/>
+        <location filename="../mainwindow.cpp" line="1078"/>
         <source>Created</source>
         <translation>أنشئ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1034"/>
+        <location filename="../mainwindow.cpp" line="1079"/>
         <source>Title</source>
         <translation>العنوان</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1036"/>
+        <location filename="../mainwindow.cpp" line="1081"/>
         <source>Creator</source>
         <translation>المنشئ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1037"/>
+        <location filename="../mainwindow.cpp" line="1082"/>
         <source>Producer</source>
         <translation>المنتج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1038"/>
+        <location filename="../mainwindow.cpp" line="1083"/>
         <source>Modified</source>
         <translation>عدل</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1039"/>
+        <location filename="../mainwindow.cpp" line="1084"/>
         <source>Format</source>
         <translation>التنسيق</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1040"/>
+        <location filename="../mainwindow.cpp" line="1085"/>
         <source>Pages</source>
         <translation>الصفحات </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1046"/>
+        <location filename="../mainwindow.cpp" line="1091"/>
         <source>Tag:</source>
         <translation>الوسم:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1174"/>
+        <location filename="../mainwindow.cpp" line="1219"/>
         <source>&amp;%1 %2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1249"/>
+        <location filename="../mainwindow.cpp" line="1294"/>
         <source>About booksorg</source>
         <translation>حول منظم الكتب</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1250"/>
+        <location filename="../mainwindow.cpp" line="1295"/>
         <source>&lt;p&gt;&lt;b&gt;booksorg %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;booksorg is a easy organizer for your PDF books using  poppler library.&lt;p&gt; See &lt;a href=&quot;https://elkirtasse.sourceforge.net/&quot;&gt;elkirtasse.sourceforge.net&lt;/a&gt; for more information.&lt;/p&gt;&lt;p&gt;&amp;copy; About Zakaria&lt;/p&gt;</source>
         <translation type="unfinished">&lt;p&gt;&lt;b&gt;منظم الكتب %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;منظم الكتب الالكترونية بطريقة سهلة يستخدم مكتبات poppler library.&lt;p&gt; يرجى زيارة &lt;a href=&quot;https://sourceforge.net/project/elokab/&quot;&gt;sourceforge.net/project/elokab&lt;/a&gt; من اجل معلومات اكثر.&lt;/p&gt;&lt;p&gt;&amp;copy; أبو زكريا&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1259"/>
+        <location filename="../mainwindow.cpp" line="1304"/>
         <source>The change will take effect the next time the application is started.</source>
         <translation>سيتم تطبيق التغييرات عند البدأ التالي للبرنامج.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1543"/>
+        <location filename="../mainwindow.cpp" line="1589"/>
         <source>The book no existes.</source>
         <translation type="unfinished">هذا الكتاب  غير موجود  في المكتبة.</translation>
     </message>
     <message>
         <source>&lt;p&gt;&lt;b&gt;booksorg %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;booksorg is a easy organizer for your PDF books using qpdfview and poppler library.&lt;p&gt; See &lt;a href=&quot;https://sourceforge.net/project/elokab/&quot;&gt;sourceforge.net/project/elokab&lt;/a&gt; for more information.&lt;/p&gt;&lt;p&gt;&amp;copy; About Zakaria&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;منظم الكتب %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;منظم الكتب الالكترونية بطريقة سهلة يستخدم مكتبات poppler library.&lt;p&gt; يرجى زيارة &lt;a href=&quot;https://sourceforge.net/project/elokab/&quot;&gt;sourceforge.net/project/elokab&lt;/a&gt; من اجل معلومات اكثر.&lt;/p&gt;&lt;p&gt;&amp;copy; أبو زكريا&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;منظم الكتب %1&lt;/b&gt;&lt;/p&gt;&lt;p&gt;منظم الكتب الالكترونية بطريقة سهلة يستخدم مكتبات poppler library.&lt;p&gt; يرجى زيارة &lt;a href=&quot;https://sourceforge.net/project/elokab/&quot;&gt;sourceforge.net/project/elokab&lt;/a&gt; من اجل معلومات اكثر.&lt;/p&gt;&lt;p&gt;&amp;copy; أبو زكريا&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1271"/>
+        <location filename="../mainwindow.cpp" line="1316"/>
         <source>The language for this application has been changed.
 The change will take effect the next time the application is started.</source>
         <translation>لقد تم تغيير لغة التطبيق 
@@ -978,92 +987,108 @@ The change will take effect the next time the application is started.</source>
 <context>
     <name>MyModel</name>
     <message>
-        <location filename="../mymodel.cpp" line="143"/>
+        <location filename="../mymodel.cpp" line="142"/>
         <source>Name</source>
         <translation>الإسم</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="144"/>
+        <location filename="../mymodel.cpp" line="143"/>
         <source>Author</source>
         <translation>المؤلف </translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="145"/>
+        <location filename="../mymodel.cpp" line="144"/>
         <source>Comment</source>
         <translation>تعريف</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="146"/>
+        <location filename="../mymodel.cpp" line="145"/>
         <source>Group</source>
         <translation>المجموعة</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="147"/>
+        <location filename="../mymodel.cpp" line="146"/>
         <source>Rating</source>
         <translation>التنقيط</translation>
     </message>
     <message>
+        <location filename="../mymodel.cpp" line="204"/>
         <location filename="../mymodel.cpp" line="205"/>
-        <location filename="../mymodel.cpp" line="206"/>
+        <location filename="../mymodel.cpp" line="249"/>
         <location filename="../mymodel.cpp" line="250"/>
-        <location filename="../mymodel.cpp" line="251"/>
-        <location filename="../mymodel.cpp" line="285"/>
+        <location filename="../mymodel.cpp" line="284"/>
+        <location filename="../mymodel.cpp" line="324"/>
         <location filename="../mymodel.cpp" line="325"/>
-        <location filename="../mymodel.cpp" line="326"/>
-        <location filename="../mymodel.cpp" line="442"/>
-        <location filename="../mymodel.cpp" line="686"/>
-        <location filename="../mymodel.cpp" line="813"/>
-        <location filename="../mymodel.cpp" line="966"/>
+        <location filename="../mymodel.cpp" line="441"/>
+        <location filename="../mymodel.cpp" line="685"/>
+        <location filename="../mymodel.cpp" line="812"/>
+        <location filename="../mymodel.cpp" line="965"/>
         <source>Unknown</source>
         <translation>غير معروف</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="517"/>
-        <location filename="../mymodel.cpp" line="537"/>
+        <location filename="../mymodel.cpp" line="516"/>
+        <location filename="../mymodel.cpp" line="536"/>
         <source>Search/</source>
         <translation>بحث/</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="773"/>
+        <location filename="../mymodel.cpp" line="772"/>
         <source>Do you want to delete All selected itemes?.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="774"/>
+        <location filename="../mymodel.cpp" line="773"/>
         <source>Delete frome computer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Do you want to delete All books in %1 ?.</source>
-        <translation>هل تريد حذف كل الكتب في  %1 ؟0.</translation>
+        <location filename="../mymodel.cpp" line="1285"/>
+        <source>removing... </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1131"/>
+        <location filename="../mymodel.cpp" line="1285"/>
+        <source> from data..</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mymodel.cpp" line="1299"/>
+        <location filename="../mymodel.cpp" line="1311"/>
+        <source>removing...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you want to delete All books in %1 ?.</source>
+        <translation type="vanished">هل تريد حذف كل الكتب في  %1 ؟0.</translation>
+    </message>
+    <message>
+        <location filename="../mymodel.cpp" line="1130"/>
         <source>Groups</source>
         <translation>المجموعات</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1132"/>
+        <location filename="../mymodel.cpp" line="1131"/>
         <source>Ratings</source>
         <translation>التنقيط</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1133"/>
+        <location filename="../mymodel.cpp" line="1132"/>
         <source>Authors</source>
         <translation>المؤلفين</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1134"/>
+        <location filename="../mymodel.cpp" line="1133"/>
         <source>Search</source>
         <translation>بحث</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1185"/>
+        <location filename="../mymodel.cpp" line="1184"/>
         <source>Create books information...</source>
         <translation>انشاء معلومات الكتب...</translation>
     </message>
     <message>
-        <location filename="../mymodel.cpp" line="1185"/>
+        <location filename="../mymodel.cpp" line="1184"/>
         <source>Cancel</source>
         <translation>الغاء</translation>
     </message>
@@ -1072,7 +1097,7 @@ The change will take effect the next time the application is started.</source>
     <name>OutputFilesPage</name>
     <message>
         <source>Informatons</source>
-        <translation>معلومات</translation>
+        <translation type="vanished">معلومات</translation>
     </message>
     <message>
         <location filename="../addbookwizard.cpp" line="125"/>
@@ -1173,7 +1198,7 @@ The change will take effect the next time the application is started.</source>
         <translation>الغاء القفل %1</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="94"/>
+        <location filename="../main.cpp" line="96"/>
         <source>Books Organizer</source>
         <translation type="unfinished">منظم الكتب</translation>
     </message>
@@ -1267,118 +1292,118 @@ The change will take effect the next time the application is started.</source>
         <translation>نافذة</translation>
     </message>
     <message>
-        <location filename="../widgetpdf.ui" line="91"/>
+        <location filename="../widgetpdf.ui" line="89"/>
         <source>Thumbnails</source>
         <translation>مصغرات</translation>
     </message>
     <message>
         <source>Bookmarks</source>
-        <translation>علامات</translation>
+        <translation type="vanished">علامات</translation>
     </message>
     <message>
         <source>show/hide contents</source>
-        <translation>عرض / اخفاء الفهرسة</translation>
+        <translation type="vanished">عرض / اخفاء الفهرسة</translation>
     </message>
     <message>
         <source>&amp;First page</source>
-        <translation>الصفحة الا&amp;ولى</translation>
+        <translation type="vanished">الصفحة الا&amp;ولى</translation>
     </message>
     <message>
         <source>&amp;Previous page</source>
-        <translation>الصفحة ال&amp;سابقة</translation>
+        <translation type="vanished">الصفحة ال&amp;سابقة</translation>
     </message>
     <message>
         <source>&amp;Next page</source>
-        <translation>الصفحة ال&amp;تالية</translation>
+        <translation type="vanished">الصفحة ال&amp;تالية</translation>
     </message>
     <message>
         <source>&amp;Last page</source>
-        <translation>الصفحة الا&amp;خيرة</translation>
+        <translation type="vanished">الصفحة الا&amp;خيرة</translation>
     </message>
     <message>
         <source>&amp;Add Bookmark</source>
-        <translation>إ&amp;ضافة علامة</translation>
+        <translation type="vanished">إ&amp;ضافة علامة</translation>
     </message>
     <message>
         <source>&amp;Refresh</source>
-        <translation>&amp;تحديث</translation>
+        <translation type="vanished">&amp;تحديث</translation>
     </message>
     <message>
         <source>&amp;Find</source>
-        <translation>&amp;بحث</translation>
+        <translation type="vanished">&amp;بحث</translation>
     </message>
     <message>
         <source>Zoom &amp;in</source>
-        <translation>ت&amp;كبير</translation>
+        <translation type="vanished">ت&amp;كبير</translation>
     </message>
     <message>
         <source>Zoom &amp;out</source>
-        <translation>تص&amp;غير</translation>
+        <translation type="vanished">تص&amp;غير</translation>
     </message>
     <message>
         <source>Original &amp;size</source>
-        <translation>الحجم الح&amp;قيقي</translation>
+        <translation type="vanished">الحجم الح&amp;قيقي</translation>
     </message>
     <message>
         <source>Fit width</source>
-        <translation>ناسب العرض</translation>
+        <translation type="vanished">ناسب العرض</translation>
     </message>
     <message>
         <source>Fit to page size</source>
-        <translation>ناسب عرض الصفحة</translation>
+        <translation type="vanished">ناسب عرض الصفحة</translation>
     </message>
     <message>
         <source>Continous</source>
-        <translation>مستمر</translation>
+        <translation type="vanished">مستمر</translation>
     </message>
     <message>
         <source>Invert colors</source>
-        <translation>عكس الألوان</translation>
+        <translation type="vanished">عكس الألوان</translation>
     </message>
     <message>
         <source>Invert colors... </source>
-        <translation>عكس الألوان...</translation>
+        <translation type="vanished">عكس الألوان...</translation>
     </message>
     <message>
         <source>Single Page</source>
-        <translation>صفحة واحدة</translation>
+        <translation type="vanished">صفحة واحدة</translation>
     </message>
     <message>
         <source>Two Pages</source>
-        <translation>صفحتان</translation>
+        <translation type="vanished">صفحتان</translation>
     </message>
     <message>
         <source>New Group</source>
-        <translation>مجموعة جديدة</translation>
+        <translation type="vanished">مجموعة جديدة</translation>
     </message>
     <message>
         <source>Do you want to delete selected bookmark</source>
-        <translation>هل تريد حذفالعلامات المحددة</translation>
+        <translation type="vanished">هل تريد حذفالعلامات المحددة</translation>
     </message>
     <message>
         <source>Enter new name:</source>
-        <translation>ادخل اسم جديد :</translation>
+        <translation type="vanished">ادخل اسم جديد :</translation>
     </message>
     <message>
-        <location filename="../widgetpdf.ui" line="82"/>
+        <location filename="../widgetpdf.ui" line="81"/>
         <source>Contents</source>
         <translation>الفهرسة</translation>
     </message>
     <message>
         <source>Thambnails</source>
-        <translation>مصغرات</translation>
+        <translation type="vanished">مصغرات</translation>
     </message>
     <message>
         <source>Remove Bookmark</source>
-        <translation>حذف علامة</translation>
+        <translation type="vanished">حذف علامة</translation>
     </message>
     <message>
         <source>Rename Bookmark</source>
-        <translation>اعد تسمية العلامة</translation>
+        <translation type="vanished">اعد تسمية العلامة</translation>
     </message>
     <message>
         <source>of</source>
-        <translation>من</translation>
+        <translation type="vanished">من</translation>
     </message>
     <message>
         <location filename="../widgetpdf.cpp" line="47"/>

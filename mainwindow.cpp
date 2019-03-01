@@ -902,7 +902,14 @@ if(mDebug)qDebug()<<"MainWindow::slotOpenWith() ";
     if(QFile::exists(Path::booksDir()+fi.fileName()))
        fileName=Path::booksDir()+fi.fileName();
 
-    QDesktopServices::openUrl(QUrl::fromLocalFile(fileName));
+     QSettings settings;
+   QString externProg=  settings.value("ExternalProgram").toString();
+   if(!externProg.isEmpty()){
+       QProcess p;
+       p.startDetached(externProg,QStringList()<<fileName);
+   }else{
+      QDesktopServices::openUrl(QUrl::fromLocalFile(fileName));
+   }
 
 }
 
