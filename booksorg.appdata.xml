@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Mosaab Alzoubi <moceap@hotmail.com> -->
+<!--
+EmailAddress: moceap[AT]hotmail[DOT]com
+SentUpstream: 2017-2-18
+-->
+<application>
+  <id type="desktop">booksorg.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <summary>Books Organizer</summary>
+  <description>
+    <p>
+        Books Organizer an organizer for pdf files based on sqlite and with a built-in reader. 
+        Bring your favorite PDF pages all in one! Make your own extract pages from existing ones.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/zakariakov/booksorg</url>
+  <screenshots>
+    <screenshot type="default">https://raw.githubusercontent.com/zakariakov/screenshots/master/booksorg.png</screenshot>
+  </screenshots>
+  <updatecontact>moceap@hotmail.com</updatecontact>
+</application>
